@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# AuraSign – Real-Time Sign Language Translator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AuraSign is an AI-powered web application that translates sign language gestures into real-time text and speech using computer vision and machine learning directly in the browser.
 
-Currently, two official plugins are available:
+The application uses MediaPipe Hands for hand tracking and TensorFlow.js for gesture classification, enabling seamless communication between deaf/hard-of-hearing individuals and others.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
+- Real-time hand gesture detection
+- Sign language to text translation
+- Text-to-speech conversion
+- Browser-based ML inference
+- Live camera feed processing
+- Responsive and modern UI
+- Accessibility-focused solution
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
+- React.js
+- TypeScript
+- Vite
+- TensorFlow.js
+- MediaPipe Hands
+- Web Speech API
+- Tailwind CSS
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## How It Works
+1. Captures live video from the user's camera
+2. Detects hand landmarks using MediaPipe Hands
+3. Processes gestures using TensorFlow.js
+4. Converts gestures into real-time text and speech
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Future Improvements
+- Full ASL sentence recognition
+- Two-way communication mode
+- Animated signing avatar
+- Multi-language support
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Live Demo
+Coming Soon
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
