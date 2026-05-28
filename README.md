@@ -55,8 +55,6 @@ The application uses MediaPipe Hands for hand tracking and TensorFlow.js for ges
 ### Vocabulary View
 (<img width="1919" height="1079" alt="Screenshot 2026-05-28 222719" src="https://github.com/user-attachments/assets/60da8519-9bf6-4dd3-bef5-e78efae85957" />)
 
-### GitHub Repository
-(<img width="950" height="640" alt="Screenshot 2026-05-28 225815" src="https://github.com/user-attachments/assets/fb3e875c-bcfd-4d8a-b375-58c0e1314eb8" />)
 
 
 
