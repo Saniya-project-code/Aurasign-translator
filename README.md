@@ -1,3 +1,5 @@
+🌐 **Live Demo:** [Click Here to View AuraSign](https://aurasign-translator.vercel.app)
+
 # AuraSign – Real-Time Sign Language Translator
 
 AuraSign is an AI-powered web application that translates sign language gestures into real-time text and speech using computer vision and machine learning directly in the browser.
