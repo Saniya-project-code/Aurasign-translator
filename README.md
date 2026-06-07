@@ -67,6 +67,28 @@ The application uses MediaPipe Hands for hand tracking and TensorFlow.js for ges
 ### 📷 Camera & Avatar Panel
 <img width="1915" height="851" alt="Screenshot 2026-05-28 230609" src="https://github.com/user-attachments/assets/710a0ed3-81c9-43ec-ac62-e7b5f7b26420" />
 
+## Installation
+git clone https://github.com/Saniya-project-code/Aurasign-translator.git
+cd Aurasign-translator
+npm install
+npm run dev
+
+##Project Architecture
+Camera Feed
+    ↓
+MediaPipe Hands
+    ↓
+Landmark Extraction
+    ↓
+TensorFlow.js Model
+    ↓
+Gesture Classification
+    ↓
+Text + Speech Output
+
+## License
+MIT License
+
 
 
 
